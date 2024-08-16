@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suits Shopping Cart</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="image">
+        <nav class="navbar">
+          <div class="logo">Nearest Solutions</div>
+          <ul class="nav-links">
+            <li><a href="#" id="sp-a">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Sale</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="cart">
+        <!-- Example product in the cart -->
+        <div class="h-content">
+          <div class="h-con">
+            <p class="text-h">
+              "WELCOME TO <span> <b>Nearest Solutions</b></span
+              >, YOUR ULTIMATE DESTINATION FOR ALL THINGS FASHION AND STYLE.
+              IMMERSE YOURSELF IN A WORLD WHERE CREATIVITY KNOWS NO LIMITS, ——
+              AND INNOVATION IS THE DRIVING FORCE BEHIND EVERY TREND."
+            </p>
+            <h3>See What's New</h3>
+          </div>
+
+          <div id="cartIcon" class="hid-cart"><i id="cartCount" class="bx bx-cart"></i>Your Cart Content</div>
+        </div>
+          <div id="cart" class="cart hidden">
+            <div class="containerr">
+                <div id="root"></div>
+                <div class="sidebar">
+                    <div class="top-head">
+                        <p>My cart</p>
+                    </div>
+                    <div id="carditemm">Your cart is empty</div>
+                    <div class="footcart">
+                        <h3>Total</h3>
+                        <h2 id="total">$ 0.00</h2>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+
+
+
+        <div class="cart-item">
+          <img src="./assets/img1.jpg" alt="Suit 1" />
+          <div class="item-details">
+            <h2>Classic Black Suit</h2>
+            <p class="price">$199.99</p>
+            <div class="quantity-control">
+            </div>
+            <div id="addToCartBtn" class="buttons">
+                <button class="like-button">&hearts;</button>
+            <button  id="addToCartBtn" class="CartBtn" >
+              <span class="IconContainer">
+                <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                    fill="#69707D"
+                    fill-rule="nonzero"
+                  />
+                </svg>
+              </span>
+              <p class="text">Add to Cart</p>
+            </button>
+            </div>
+            
+          </div>
+          <button class="learn-more">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Explore More</span>
+          </button>
+        </div>
+
+
+        
+        <div class="cart-item">
+          <img src="./assets/img2.webp" alt="Suit 1" />
+          <div class="item-details">
+            <h2>Business Causal Suit</h2>
+            <p class="price">$239.99</p>
+            <div class="quantity-control">
+            </div>
+            <div class="buttons">
+                <button class="like-button">&hearts;</button>
+            <button class="CartBtn">
+              <span class="IconContainer">
+                <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                    fill="#69707D"
+                    fill-rule="nonzero"
+                  />
+                </svg>
+              </span>
+              <p class="text">Add to Cart</p>
+            </button>
+            </div>
+            
+          </div>
+          <button class="learn-more">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Explore More</span>
+          </button>
+        </div>
+        <div class="cart-item">
+          <img src="./assets/img3.webp" alt="Suit 1" />
+          <div class="item-details">
+            <h2>Business Causal Suit</h2>
+            <p class="price">$179.99</p>
+            <div class="quantity-control">
+            </div>
+            <div class="buttons">
+                <button class="like-button">&hearts;</button>
+            <button class="CartBtn">
+              <span class="IconContainer">
+                <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                    fill="#69707D"
+                    fill-rule="nonzero"
+                  />
+                </svg>
+              </span>
+              <p class="text">Add to Cart</p>
+            </button>
+            </div>
+            
+          </div>
+          <button class="learn-more">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Explore More</span>
+          </button>
+        </div>
+      </section>
+
+      
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+          <p>
+            &copy; 2024 Nearest Solutions .All rights reserved. created by
+            SADDEDINE TAHAR AMINE
+          </p>
+          <div class="iconss">
+            <a
+              href="https://www.facebook.com/"
+              class="text-white mx-2"
+              target="_blank"
+              ><i class="bx bxl-facebook-circle bx-md"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/"
+              class="text-white mx-2"
+              target="_blank"
+              ><i class="bx bxl-instagram bx-md"></i
+            ></a>
+            <a
+              href="https://x.com/?lang=fr"
+              class="text-white mx-2"
+              target="_blank"
+              ><i class="bx bxl-twitter bx-md"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <!-- footer section ends -->
+  </body>
+  <script src="./script2.js"></script>
+</html>
